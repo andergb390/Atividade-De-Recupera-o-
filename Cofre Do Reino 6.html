@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cofre do Reino</title>
+</head>
+<body>
+
+<h1>Cofre do Reino</h1>
+
+<p>Digite a senha:</p>
+
+<input type="password" id="senha">
+
+<button onclick="abrirCofre()">Abrir Cofre</button>
+
+<h2 id="resultado"></h2>
+
+<script>
+
+function abrirCofre() {
+
+    let senha = document.getElementById("senha").value;
+
+    if (senha == "") {
+
+        document.getElementById("resultado").innerHTML =
+        "Digite uma senha!";
+
+    }
+
+    else if (senha == "1234") {
+
+        document.getElementById("resultado").innerHTML =
+        "Cofre aberto!";
+
+    }
+
+    else {
+
+        document.getElementById("resultado").innerHTML =
+        "Senha incorreta!";
+    }
+}
+
+</script>
+
+</body>
+</html>

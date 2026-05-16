@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loja do Reino</title>
+</head>
+<body>
+
+<h1>Lojinha do reino</h1>
+
+<p>Digite o valor da compra:</p>
+
+<input type="number" id="valor">
+
+<button onclick="verificarDesconto()">Comprar</button>
+
+<h2 id="resultado"></h2>
+
+<script>
+
+function verificarDesconto() {
+
+    let valor = document.getElementById("valor").value;
+
+    if (valor >= 100) {
+
+        document.getElementById("resultado").innerHTML =
+        "Infelizmente vc ganhou desconto :(";
+
+    } else {
+
+        document.getElementById("resultado").innerHTML =
+        "Page sem desconto!";
+    }
+}
+
+</script>
+
+</body>
+</html>

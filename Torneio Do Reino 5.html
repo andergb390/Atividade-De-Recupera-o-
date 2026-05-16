@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Torneio do Reino</title>
+</head>
+<body>
+
+<h1>⚔️ Torneio do Reino</h1>
+
+<p>Digite sua idade:</p>
+<input type="number" id="idade">
+
+<p>Possui uma espada? (sim ou nao)</p>
+<input type="text" id="espada">
+
+<br><br>
+
+<button onclick="verificar()">Participar</button>
+
+<h2 id="resultado"></h2>
+
+<script>
+
+function verificar() {
+
+    let idade = document.getElementById("idade").value;
+    let espada = document.getElementById("espada").value;
+
+    if (idade >= 16 && espada == "sim") {
+
+        document.getElementById("resultado").innerHTML =
+        "Vai la, nao estou torcendo para vc :)";
+
+    } else {
+
+        document.getElementById("resultado").innerHTML =
+        "Da meia volta ou assite da arquibancada que entrar vc nao vai.";
+    }
+}
+
+</script>
+
+</body>
+</html>
