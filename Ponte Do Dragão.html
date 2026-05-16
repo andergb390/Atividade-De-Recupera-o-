@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ponte do Dragão</title>
+</head>
+<body>
+
+<h1>Ponte do Dragão</h1>
+
+<p>Digite a palavra secreta:</p>
+
+<input type="text" id="senha">
+
+<button onclick="verificar()">tentar passar</button>
+
+<h2 id="resultado"></h2>
+
+<script>
+
+function verificar() {
+
+    let palavra = document.getElementById("senha").value;
+
+    if (palavra == "fogo") {
+
+        document.getElementById("resultado").innerHTML =
+        "O dragao ta de bom humor hoje, pode ir!";
+
+    } else {
+
+        document.getElementById("resultado").innerHTML =
+        "Voce viro churas!";
+    }
+}
+
+</script>
+
+</body>
+</html>
